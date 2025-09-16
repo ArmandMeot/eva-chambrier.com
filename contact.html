@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Eva Chambrier pour toute question ou pour réserver un cours d'équitation.">
+    <title>Contact - Eva Chambrier Équitation</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo-equitation.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-equitation.jpg" alt="Logo Eva Chambrier Équitation" class="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">Eva Chambrier</a></li>
+                    <li><a href="cours.html">Cours d'équitation</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu" aria-label="Menu mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+<main>
+    <section class="contact-section">
+        <div class="container">
+            
+            <div class="contact-header">
+                <h2>Me Contacter</h2>
+                <hr class="separator">
+                <p>
+                    Pour toute demande de <mark>cours, de coaching ou autre, n'hésitez pas.</mark> <br>
+                    Je reviendrai vers vous dans les meilleurs délais.
+                </p>
+            </div>
+
+            <div class="contact-content-wrapper">
+
+                <div class="form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Votre Nom Complet</label>
+                            <input type="text" id="name" class="form-control" placeholder="Ex: Jeanne Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Votre Adresse Mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="Ex: jeanne.dupont@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet de votre message</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="" disabled selected>-- Choisissez une option --</option>
+                                <option value="Demande de cours privé / semi-privé">1- Cours privé et semi-privé</option>
+                                <option value="Demande de coaching compétition">2- Coaching compétition</option>
+                                <option value="Demande pour le travail du cheval">3- Travail du cheval</option>
+                                <option value="Autre demande">4- Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre Message</label>
+                            <textarea id="message" class="form-control" placeholder="Bonjour, je vous contacte concernant..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Envoyer</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Zone de déplacement :</strong><br> Pays de Gex - Genève<br>
+                    <p><i class="fas fa-phone"></i> <strong>Téléphone :</strong><br> <a href="tel:+33787747067">+33 87 74 70 67</a></p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email :</strong><br> <a href="mailto:armand.meot@gmail.com">eva.chambrier@gmail.com</a></p>
+                    
+                    <h4><i class="fas fa-clock"></i> Horaires</h4>
+                    <p>
+                        Mardi - Samedi : 9h - 18h<br>
+                        Dimanche : 9h - 12h<br>
+                        Lundi : Fermé
+                    </p>
+                </div>
+
+            </div> <div class="map-container map-container-alt-bg">
+                <h2>Zone de déplacement</h2>
+                <hr class="separator">
+                <iframe 
+                    src="https://www.google.com/maps/d/u/0/embed?mid=105D6Y7AVNmdbDp1eAmkQ-dWSZXFhJB8&ehbc=2E312F" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div> </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p class="copyright">© 2025 Eva Chambrier Équitation - Tous droits réservés.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
